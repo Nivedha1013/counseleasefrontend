@@ -1,0 +1,407 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f7f9fc;
+    color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #5b9bd5;
+    color: white;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background: url('teenage-counseling-banner.jpg') center/cover no-repeat;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero .cta-button {
+    background: #ff6b81;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: 0.3s;
+}
+
+.hero .cta-button:hover {
+    background: #e04a64;
+}
+
+/* Why Choose Section */
+.why-choose {
+    background: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.why-choose h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.why-choose p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Benefits Grid */
+.benefits-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Individual Benefit Box */
+.benefit {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.benefit:hover {
+    transform: scale(1.05);
+}
+
+/* Icons */
+.benefit img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+/* Titles */
+.benefit h3 {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+/* Descriptions */
+.benefit p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .benefits-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .benefit {
+        width: 90%;
+    }
+}
+
+
+
+/* Subscription Plans Section */
+.plans {
+    background: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.plans h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Table Styling */
+.plans table {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Table Headers */
+.plans table thead {
+    background: #007bff;
+    color: white;
+}
+
+.plans table .th,
+.plans table .td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Alternate Row Colors */
+.plans table tbody tr:nth-child(even) {
+    background: #f1f1f1;
+}
+
+/* Subscription Buttons */
+.subscribe-button {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.subscribe-button:hover {
+    background: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .plans table {
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+    }
+
+    .plans th, .plans td {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
+/* Plan Details Section */
+.plan-details {
+    background: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.plan-details h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Plan Grid */
+.plan-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Plan Card */
+.plan-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Plan Card Hover Effect */
+.plan-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Plan Card Title */
+.plan-card h3 {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+/* Plan Card Description */
+.plan-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Plan Features List */
+.plan-card ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.plan-card ul li {
+    font-size: 1rem;
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Subscribe Button */
+.subscribe-button {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.subscribe-button:hover {
+    background: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .plan-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .plan-card {
+        width: 90%;
+    }
+}
+
+
+/* FAQ Section */
+.faqs {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.faqs h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Individual FAQ Item */
+.faq-item {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 15px auto;
+    max-width: 800px;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+}
+
+/* FAQ Heading */
+.faq-item h3 {
+    font-size: 1.3rem;
+    color: #007bff;
+    cursor: pointer;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+/* Expand/Collapse Indicator */
+.faq-item h3::after {
+    content: " +";
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    transition: 0.3s ease-in-out;
+}
+
+/* FAQ Answer */
+.faq-item p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    display: none; /* Hide initially */
+}
+
+/* Open State */
+.faq-item.active h3::after {
+    content: " -"; /* Change to minus on open */
+}
+
+.faq-item.active p {
+    display: block; /* Show answer when active */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .faq-item {
+        max-width: 100%;
+    }
+}
+
+
+/* Booking Section */
+.booking {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.booking a {
+    background: #ff6b81;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: 0.3s;
+}
+
+.booking a:hover {
+    background: #e04a64;
+}
+
+/* Footer */
+.footer {
+    background: #5b9bd5;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}

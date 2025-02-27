@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with Counselor</title>
+    <link rel="stylesheet" href="styles/chat.css">
+</head>
+<body>
+
+    <div class="chat-container">
+        <!-- Sidebar for Counselor Info -->
+        <aside class="sidebar">
+            <h3>Counselor</h3>
+            <div class="counselor-info">
+                <img src="images/counselor.jpg" alt="Counselor">
+                <p><strong>Dr. Emily Johnson</strong></p>
+                <p>Licensed Therapist</p>
+            </div>
+            <div class="call-options">
+                <button id="audioCall"><i class="fas fa-phone"></i> Audio Call</button>
+                <button id="videoCall"><i class="fas fa-video"></i> Video Call</button>
+            </div>
+        </aside>
+
+        <!-- Chat Section -->
+        <main class="chat-box">
+            <div class="chat-header">
+                <h2>Chat with Dr. Emily Johnson</h2>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <!-- Messages will be displayed here -->
+            </div>
+            <div class="chat-input">
+                <input type="text" id="messageInput" placeholder="Type your message...">
+                <button id="sendMessage"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </main>
+    </div>
+
+    <script src="scripts/chat.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>

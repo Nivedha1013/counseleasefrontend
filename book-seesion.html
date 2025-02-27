@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Session - CounseLease</title>
+    <link rel="stylesheet" href="styles/book-session.css">
+   
+</head>
+<body>
+    <div class="booking-container">
+        <h1 class="fade-in">Book a Counseling Session</h1>
+        <p class="subtext fade-in">Select a time that works for you and get started on your journey to well-being.</p>
+
+        <form class="booking-form slide-up" id="booking-form">
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" placeholder="Enter your full name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="session-type">Session Type</label>
+            <select id="session-type" required>
+                <option value="individual">Individual Counseling</option>
+                <option value="family">Family Therapy</option>
+                <option value="couples">Couples Therapy</option>
+                <option value="teenage">Teenage Counseling</option>
+            </select>
+
+            <label for="date">Preferred Date</label>
+            <input type="date" id="date" required>
+
+            <label for="time">Preferred Time</label>
+            <input type="time" id="time" required>
+
+            <label for="counselor">Select Counselor</label>
+            <select id="counselor" required>
+                <option value="individual">Dr. Asha</option>
+                <option value="family">Dr. Shwetha</option>
+                <option value="couples">Dr. vishnu</option>
+                <option value="teenage">Dr.varun</option>
+            </select>
+
+            <div id="subscription-status" class="subscription-check">
+                <p id="subscription-message">Checking subscription status...</p>
+                <button id="subscribe-button" style="display: none;">Subscribe Now</button>
+            </div>
+
+            <button type="submit" class="book-button">Book Now</button>
+        </form>
+    </div>
+    <div id="success-message" class="success-message">
+        Session booked successfully!
+    </div>
+    
+    <script src="scripts/booking.js"></script>
+</body>
+</html>

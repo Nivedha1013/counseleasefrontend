@@ -1,0 +1,182 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #080808;
+    background: #eee6e6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #004f71;
+    color: white;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background: url('couple-therapy-banner.jpg') center/cover no-repeat;
+    color: rgb(32, 25, 25);
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    background: #ff6600;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+.hero .cta-button:hover {
+    background: #e55a00;
+}
+
+/* About Section */
+.about {
+    background: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    color: #004f71;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Services Section */
+.services {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2em;
+    color: #004f71;
+    margin-bottom: 20px;
+}
+
+.service-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h3 {
+    color: #ff6600;
+}
+
+.service-card p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* Top Counselors Section */
+.counselors {
+    background: #eef6f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.counselor-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.counselor-card {
+    background: white;
+    padding: 20px;
+    width: 30%;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+.counselor-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.counselor-card h4 {
+    margin-top: 10px;
+    color: #004f71;
+}
+
+/* Booking Section */
+.book-session {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.book-session .btn{
+    background: #ff6600;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+.book-section .btn:hover {
+    background: #e55a00;
+}
+
+/* Footer */
+.footer {
+    background: #004f71;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}

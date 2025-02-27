@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard | CounseLease</title>
+    <link rel="stylesheet" href="styles/dashboard.css">
+    <script defer src="scripts/dashboard.js"></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>CounseLease</h2>
+            <p>Welcome, <span id="user-name"></span>!</p>
+            <ul>
+                <li><a href="#" onclick="showSection('dashboard')">Dashboard</a></li>
+                <li><a href="#" onclick="showSection('sessions')">My Sessions</a></li>
+                <li><a href="#" onclick="showSection('subscription')">Subscription</a></li>
+                <li><a href="#" onclick="showSection('chat')">Chat</a></li>
+                <li><a href="#" onclick="showSection('profile')">Profile</a></li>
+                <li><a href="#" onclick="showSection('mse')">MSE Status</a></li>
+                <li><a href="#" onclick="showSection('support')">Help & Support</a></li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="dashboard-content">
+            <header>
+                <h1>Welcome, <span id="dashboard-username"></span>!</h1>
+                <button class="logout-btn">Logout</button>
+            </header>
+
+            <!-- Dashboard Overview -->
+            <section id="dashboard" class="content-section">
+                <h2>Dashboard Overview</h2>
+                <div class="overview">
+                    <div class="card">
+                        <h3>Upcoming Session</h3>
+                        <p id="next-session">No upcoming sessions</p>
+                        <a href="book-seesion.html" class="btn">Book Now</a>
+                    </div>
+                    <div class="card">
+                        <h3>Current Plan</h3>
+                        <p id="current-plan">Basic Plan</p>
+                        <a href="subscription.html" class="btn">Upgrade</a>
+                    </div>
+                    <div class="card">
+                        <h3>Chat with Counselor</h3>
+                        <a href="chat.html" class="btn">Start Chat</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- My Sessions -->
+            <section id="sessions" class="content-section hidden">
+                <h2>My Sessions</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Counselor</th>
+                            <th>Duration</th>
+                            <th>Session Summary</th>
+                        </tr>
+                    </thead>
+                    <tbody id="session-list">
+                        <tr>
+                            <td colspan="5">No past sessions</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- MSE Status -->
+            <section id="mse" class="content-section hidden">
+                <h2>MSE Status</h2>
+                <p>Mental Status Score: <span id="mse-score">N/A</span></p>
+                <p>Status: <span id="mse-status">Pending</span></p>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,197 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f7f9fc;
+    color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #5b9bd5;
+    color: white;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background: url('teenage-counseling-banner.jpg') center/cover no-repeat;
+    color: rgb(7, 7, 7);
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero .cta-button {
+    background: #ff6b81;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: 0.3s;
+}
+
+.hero .cta-button:hover {
+    background: #e04a64;
+}
+
+/* About Section */
+.about {
+    background: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    color: #5b9bd5;
+    font-size: 2.2em;
+    margin-bottom: 15px;
+}
+
+.about p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Common Teenage Issues Section */
+.issues {
+    padding: 50px 20px;
+    background: #eef4fb;
+    text-align: center;
+}
+
+.issues h2 {
+    color: #5b9bd5;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.issues-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.issue-card {
+    background: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.issue-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.issue-card img {
+    width: 70px;
+    height: 70px;
+}
+
+.issue-card h3 {
+    color: #ff6b81;
+    margin-top: 10px;
+}
+
+.issue-card p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* Top Counselors Section */
+.counselors {
+    background: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.counselor-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.counselor-card {
+    background: #f7f9fc;
+    padding: 20px;
+    width: 30%;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    transition: 0.3s;
+}
+
+.counselor-card:hover {
+    transform: translateY(-5px);
+}
+
+.counselor-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.counselor-card h4 {
+    margin-top: 10px;
+    color: #5b9bd5;
+}
+
+/* Booking Section */
+.booking {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.booking .cta-button {
+    background: #ff6b81;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: 0.3s;
+}
+
+.booking .cta-button:hover {
+    background: #e04a64;
+}
+
+/* Footer */
+.footer {
+    background: #5b9bd5;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}

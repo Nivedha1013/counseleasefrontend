@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find a Counselor - CounseLease</title>
+    <link rel="stylesheet" href="styles/counsellor.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">CounseLease</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <h1>Find a Counselor</h1>
+        <p>Browse through our list of expert counselors and book your session today.</p>
+    </header>
+
+    <!-- Search & Filter -->
+    <section class="filter-section">
+        <input type="text" id="search" placeholder="Search by Name or Expertise...">
+        <select id="specialty">
+            <option value="">Filter by Specialty</option>
+            <option value="anxiety">Anxiety</option>
+            <option value="depression">Depression</option>
+            <option value="family-therapy">Family Therapy</option>
+            <option value="couples-therapy">Couples Therapy</option>
+            <option value="teenage-counseling">Teenage Counseling</option>
+        </select>
+    </section>
+
+    <!-- Counselors List -->
+    <section class="counselor-list">
+        <div class="counselor-card" data-specialty="Anxiety">
+            <img src="images/counselor1.jpg" alt="Dr. Sarah Johnson">
+            <h3>Dr. Sarah Johnson</h3>
+            <p><strong>Specialty:</strong> Anxiety</p>
+            <p>With over 10 years of experience, Dr. Johnson provides personalized therapy.</p>
+            <p class="price"><strong>Price:</strong> $50/session</p>
+            <a href="book-session.html" class="book-button">Book Session</a>
+        </div>
+
+        <div class="counselor-card">
+            <img src="images/counselor2.jpg" alt="Dr. Mark Evans">
+            <h3>Dr. Mark Evans</h3>
+            <p><strong>Specialty:</strong> Depression & Mood Disorders</p>
+            <p>Dr. Evans specializes in cognitive therapy for depression.</p>
+            <p class="price"><strong>Price:</strong> $60/session</p>
+            <a href="book-session.html" class="book-button">Book Session</a>
+        </div>
+
+        <div class="counselor-card">
+            <img src="images/counselor3.jpg" alt="Dr. Emily Carter">
+            <h3>Dr. Emily Carter</h3>
+            <p><strong>Specialty:</strong> Family & Relationship Therapy</p>
+            <p>Helping families and couples strengthen their relationships.</p>
+            <p class="price"><strong>Price:</strong> $70/session</p>
+            <a href="book-session.html" class="book-button">Book Session</a>
+        </div>
+
+        <div class="counselor-card">
+            <img src="images/counselor4.jpg" alt="Dr. James Adams">
+            <h3>Dr. James Adams</h3>
+            <p><strong>Specialty:</strong> Teenage & Adolescent Counseling</p>
+            <p>Dr. Adams helps teenagers with academic stress and well-being.</p>
+            <p class="price"><strong>Price:</strong> $55/session</p>
+            <a href="book-session.html" class="book-button">Book Session</a>
+        </div>
+
+        <div class="counselor-card">
+            <img src="images/counselor5.jpg" alt="Dr. Olivia Brown">
+            <h3>Dr. Olivia Brown</h3>
+            <p><strong>Specialty:</strong> Couples & Marriage Therapy</p>
+            <p>Helping couples build stronger relationships.</p>
+            <p class="price"><strong>Price:</strong> $75/session</p>
+            <a href="book-session.html" class="book-button">Book Session</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 CounseLease. All rights reserved.</p>
+        <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </footer>
+
+    <script src="scripts/counsellor.js"></script>
+
+</body>
+</html>

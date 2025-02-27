@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counselor Dashboard</title>
+    <link rel="stylesheet" href="styles/counsellor_dashboard.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <nav class="sidebar">
+            <h2>CounseLease</h2>
+            <ul>
+                <li><a href="#sessions">Sessions</a></li>
+                <li><a href="#chat">Chat</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#availability">Availability</a></li>
+                <li><a href="#logout" id="logout">Logout</a></li>
+                <li><a href="#sessions">Sessions</a></li>
+                <li><a href="#chat">Chat & Video Calls</a></li>
+                <li><a href="#profile">Profile Management</a></li>
+                <li><a href="#earnings">Earnings & Payments</a></li>
+            </ul>
+        </nav>
+        <main class="dashboard-content">
+            <section id="sessions" class="content-section">
+                <h2>Upcoming Sessions</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Client Name</th>
+                            <th>Date & Time</th>
+                            <th>Mode</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>Feb 25, 2025 - 10:00 AM</td>
+                            <td>Video Call</td>
+                            <td><button class="join-btn">Join</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="chat" class="content-section">
+                <h2>Chat with Clients</h2>
+                <div class="chat-box">
+                    <div class="messages"></div>
+                    <input type="text" id="chat-input" placeholder="Type a message...">
+                    <button id="send-btn">Send</button>
+                </div>
+            </section>
+
+            
+
+            <section id="availability" class="content-section">
+                <h2>Set Availability</h2>
+                <label for="availability">Available Time Slots:</label>
+                <input type="text" id="availability" placeholder="e.g., Mon-Fri, 9AM - 5PM">
+                <button>Save</button>
+            </section>
+            <section id="chat">
+                <h2>Chat & Video Calls</h2>
+                <div class="chat-container">
+                    <div class="messages">
+                        <div class="message received">Hello, I need help.</div>
+                        <div class="message sent">Sure! How can I assist you?</div>
+                    </div>
+                    <input type="text" id="message-input" placeholder="Type a message...">
+                    <button id="send-message">Send</button>
+                    <button id="video-call">Start Video Call</button>
+                </div>
+            </section>
+
+            <!-- Profile Management Section -->
+            <section id="profile">
+                <h2>Profile Management</h2>
+                <form id="profile-form">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" value="Dr. John Doe">
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" value="johndoe@example.com">
+                    
+                    <label for="password">New Password:</label>
+                    <input type="password" id="password">
+
+                    <button type="submit">Update Profile</button>
+                </form>
+            </section>
+
+            <!-- Earnings & Payments Section -->
+            <section id="earnings">
+                <h2>Earnings & Payments</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Client</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Feb 20, 2025</td>
+                            <td>Jane Smith</td>
+                            <td>$50</td>
+                            <td>Completed</td>
+                        </tr>
+                        <tr>
+                            <td>Feb 18, 2025</td>
+                            <td>Michael Brown</td>
+                            <td>$70</td>
+                            <td>Pending</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        
+        </main>
+    </div>
+    
+    <script src="scripts/counsellor_dashboard.js"></script>
+</body>
+</html>
+

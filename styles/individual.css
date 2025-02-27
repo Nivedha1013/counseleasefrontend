@@ -1,0 +1,99 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+header {
+    background: #0073e6;
+    color: white;
+    padding: 30px;
+}
+
+header .btn {
+    display: inline-block;
+    background: #ffcc00;
+    padding: 10px 20px;
+    color: black;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Counseling Section */
+.about-counseling, .problems-section, .top-counselors {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1000px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.about-counseling img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Problems Section */
+.problems-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.problem-box {
+    background: #eee;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Counselor Section */
+.counselor-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.counselor-card {
+    background: white;
+    width: 200px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.counselor-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+/* Book Session */
+.book-session {
+    background: #0073e6;
+    color: white;
+    padding: 30px;
+}
+
+.book-session .btn {
+    background: #ffcc00;
+    padding: 15px 25px;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 10px;
+}

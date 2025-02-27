@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CounseLease - Online Counseling</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="styles/main.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo">
+                <img src="images/logo1.png" alt="CounseLease" width="50" height="50">
+            </div>
+            <ul>
+                <li class="dropdown">
+                    <a href="service.html"><b>Services</b></a>
+                    <ul class="submenu">
+                        <li><a href="individual.html">Individual Therapy</a></li>
+                        <li><a href="couples.html">Couples Counseling</a></li>
+                        <li><a href="family.html">Family Therapy</a></li>
+                        <li><a href="teenage.html">Teen Counseling</a></li>
+                        <li><a href="career.html">Career Counseling</a></li>
+                    </ul>
+                </li>
+                <li><a href="counsellor.html">Counselors</a></li>
+                <li><a href="mse.html">MSE</a></li>
+                <li><a href="subscription.html">Subscription</a></li>
+                <button><a href="login.html">Login In</a></button>
+            </ul>
+        </div>
+    </nav>
+    
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="heading">Empower Your Mind with <i>COUNSELEASE</i></h1>
+            <p class="tagline"> Welcome to CounseLease<br>
+                                Your trusted platform for personal counseling anytime, anywhere.<br>
+                                Connect with certified counselors and start your journey toward mental well-being.<br>
+                                Secure, confidential, and tailored support designed just for you.<br>
+                                Choose from chat, audio, or video sessions at your convenience.<br>
+                                Empower yourself with professional guidance in a safe and comfortable space.</p>
+            <button class="mse-test-btn"><a href="mse.html">Start Your Free Test Now</a></button>
+        </div>
+    </section>
+
+    <!-- Specialized Services -->
+    <section id="services" class="services">
+        <h2 class="services-heading">Explore Our Specialized Services</h2>
+        <div class="services-container">
+            <div class="service-box anxiety">
+                <img src="images/individual.png" alt="Individualeling">
+                <h3>Individual Counseling</h3>
+                <p>Adolescents struggle with identity, anxiety, and self-esteem; CBT and mindfulness help manage emotions.</p>
+            </div>
+            <div class="service-box relationship">
+                <img src="images/couple.png" alt="Relationship Therapy" width="150px" height="150px">
+                <h3>Relationship Therapy</h3>
+                <p>Therapy strengthens healthy dialogue and understanding. Counseling nurtures connection and closeness.</p>
+            </div>
+            <div class="service-box trauma">
+                <img src="images/trauma.png" alt="Family Therapy">
+                <h3>Family Therapy</h3>
+                <p> Parent-child conflicts, divorce, and generational trauma impact mental health. Therapy improves communication.</p>
+            </div>
+            <div class="service-box career">
+                <img src="images/student.png" alt="Career Counseling">
+                <h3>Career Counseling</h3>
+                <p>Career uncertainty is common; assessments and goal-setting guide students toward informed choices.</p>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="how-to-use" class="how-to-use">
+        <!-- Online vs. Offline Counseling Section (Left Side) -->
+        <section class="counseling-comparison">
+            <h2>Online vs. Offline Counseling</h2>
+            <p>Choose the best counseling method that fits your needs. Compare the benefits of Online and Offline
+                Counseling.</p>
+
+            <div class="comparison-container">
+
+                <!-- Online Counseling Card -->
+                <div class="comparison-card">
+                    <div class="card-header online">
+                        <h3>ONLINE COUNSELING</h3>
+                    </div>
+                    <div class="card-content">
+                        <p><strong>Best for:</strong> Convenience & Flexibility</p>
+                        <ul>
+                            <li>✅ Accessible Anytime, Anywhere</li>
+                            <li>✅ Affordable & Flexible Pricing</li>
+                            <li>✅ Maintain Privacy & Anonymity</li>
+                            <li>✅ Various Communication Modes (Chat, Video, Call)</li>
+                            <li>✅ No Travel Required</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <!-- Middle Divider -->
+                <div class="vs-card">
+                    <h3>VS</h3>
+                </div>
+
+                <!-- Offline Counseling Card -->
+                <div class="comparison-card">
+                    <div class="card-header offline">
+                        <h3>OFFLINE COUNSELING</h3>
+                    </div>
+                    <div class="card-content">
+                        <p><strong>Best for:</strong> In-Person Interaction</p>
+                        <ul>
+                            <li>❌ Limited Availability & Office Hours</li>
+                            <li>❌ Higher Costs & Fixed Appointments</li>
+                            <li>❌ Less Anonymity & Privacy</li>
+                            <li>❌ Only Face-to-Face Interaction</li>
+                            <li>❌ Requires Commuting</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Virtual Phone Design (Right Side) -->
+        <div class="virtual-phone">
+            <div class="phone-screen">
+                <div class="chat-header">
+                    <span class="profile-pic"></span>
+                    <span class="contact-name">Counselor</span>
+                </div>
+
+                <div class="chat-screen">
+                    <div class="message sender">Hello, how can I help you?<span class="timestamp">10:00 AM</span></div>
+                    <div class="message receiver">I feel anxious lately.<span class="timestamp">10:02 AM</span></div>
+                    <div class="message sender">I understand. Can you describe how you feel?<span
+                            class="timestamp">10:05 AM</span></div>
+                    <div class="message receiver">I have trouble sleeping and feel overwhelmed.<span
+                            class="timestamp">10:07 AM</span></div>
+                    <div class="message sender">Let's work together on it.<br> Sign up<br> Take MSE test <br> Find a counsellor <br> Schedule a session <span
+                            class="timestamp">10:10 AM</span></div>
+                </div>
+
+                <div class="chat-input">
+                    <input type="text" placeholder="Type a message..." />
+                    <button>➤</button>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Review Section -->
+    <section id="reviews" class="reviews">
+        <h2>What Our Clients Say</h2>
+        <div class="review-slider">
+
+            <!-- Review 1 -->
+            <div class="review-card">
+                <img src="images/reviewer/image.png" alt="Sarah" class="reviewer-photo">
+                <p class="review-text">"At 25, I found peace through this platform!"</p>
+                <p class="reviewer-name">- Sarah</p>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="review-card">
+                <img src="images/reviewer/r1.png" alt="John" class="reviewer-photo">
+                <p class="review-text">"At 40, I got my life back on track!"</p>
+                <p class="reviewer-name">- John</p>
+                <div class="stars">⭐⭐⭐⭐</div>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="review-card">
+                <img src="images/reviewer/image copy.png" alt="Lisa" class="reviewer-photo">
+                <p class="review-text">"Teenage years are tough, this helped!"</p>
+                <p class="reviewer-name">- Lisa, 17</p>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+
+            <!-- Review 4 -->
+            <div class="review-card">
+                <img src="images/reviewer/r2.png" alt="Mike" class="reviewer-photo">
+                <p class="review-text">"I never thought online counseling could be this effective!"</p>
+                <p class="reviewer-name">- Mike, 32</p>
+                <div class="stars">⭐⭐⭐⭐</div>
+            </div>
+
+            <!-- Review 5 -->
+            <div class="review-card">
+                <img src="images/reviewer/r3.png" alt="Emma" class="reviewer-photo">
+                <p class="review-text">"This platform changed my perspective on mental health."</p>
+                <p class="reviewer-name">- Emma, 27</p>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="achievements">
+                <h3>🏆 Our Achievements</h3>
+                <p>✅ 5000+ Successful Therapy Sessions</p>
+                <p>✅ Certified & Trusted Counselors</p>
+                <p>📈 10,000+ Active Users Monthly</p>
+                <p>💬 Over 1 Million Messages Exchanged </p>
+                <p>🛡️ End-to-End Encrypted Sessions </p>
+            </div>
+
+            <div class="content">
+                <div class="top">
+                  <div class="logo-details">
+                    <i class="fab fa-slack"></i>
+                    <span class="logo_name">Counselease</span>
+                  </div>
+                  <div class="media-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                  </div>
+                </div>
+          
+
+            <div class="emergency-banner">
+                <p>⚠️ If you’re in a life-threatening situation, don’t use this app.
+                    Call 📞 <strong>1800-599-0019</strong> (Toll-Free, 24/7).</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Alert Message Box -->
+<!-- Floating Message Box -->
+<div class="message-box">
+    <p>How can I assist you?</p>
+    <button class="question-btn" data-question="signup">How to sign up?</button>
+    <button class="question-btn" data-question="find-counselor">How to find a counselor?</button>
+    <p id="response-text"></p>
+    <button class="close-msg">X</button>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Select buttons and response text
+        const buttons = document.querySelectorAll(".question-btn");
+        const responseText = document.getElementById("response-text");
+        const closeBtn = document.querySelector(".close-msg");
+        const messageBox = document.querySelector(".message-box");
+    
+        // Questions and responses
+        const responses = {
+            "signup": "Sign up using the signup button at the top of the page.",
+            "find-counselor": "On the top of this page, click on the 'Counselors' navbar to see the list of counselors."
+        };
+    
+        // Handle button clicks
+        buttons.forEach(button => {
+            button.addEventListener("click", function () {
+                const question = button.getAttribute("data-question");
+                responseText.textContent = responses[question]; // Show answer
+            });
+        });
+    
+        // Close message box
+        closeBtn.addEventListener("click", function () {
+            messageBox.style.display = "none";
+        });
+    });
+    </script>
+    
+</body>
+
+</html>

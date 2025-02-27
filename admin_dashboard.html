@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | CounseLease</title>
+    <link rel="stylesheet" href="styles/admin_dashboard.css">
+</head>
+<body>
+    <div class="admin-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <h2>Admin Panel</h2>
+            <ul>
+                <li><a href="#manage-users">Manage Users</a></li>
+                <li><a href="#manage-counselors">Manage Counselors</a></li>
+                <li><a href="#manage-subscriptions">Subscription Management</a></li>
+                <li><a href="#admin-settings">Settings</a></li>
+                <li><a href="index.html" class="logout-btn">Logout</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <header>
+                <h1>Welcome, Admin</h1>
+            </header>
+
+            <!-- Manage Users Section -->
+            <section id="manage-users">
+                <h2>Manage Users</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="user-list">
+                        <!-- Users will be loaded here dynamically -->
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Manage Counselors Section -->
+            <section id="manage-counselors">
+                <h2>Manage Counselors</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Speciality</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="counselor-list">
+                        <!-- Counselors will be loaded here dynamically -->
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Subscription Management Section -->
+            <section id="manage-subscriptions">
+                <h2>Subscription Management</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>User</th>
+                            <th>Plan</th>
+                            <th>Start Date</th>
+                            <th>Expiry Date</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="subscription-list">
+                        <!-- Subscription details will be loaded here dynamically -->
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Admin Settings Section -->
+            <section id="admin-settings">
+                <h2>Admin Settings</h2>
+                <form id="admin-settings-form">
+                    <label for="admin-name">Name:</label>
+                    <input type="text" id="admin-name" placeholder="Admin Name">
+
+                    <label for="admin-email">Email:</label>
+                    <input type="email" id="admin-email" placeholder="admin@example.com">
+
+                    <label for="current-password">Current Password:</label>
+                    <input type="password" id="current-password" placeholder="Enter current password">
+
+                    <label for="new-password">New Password:</label>
+                    <input type="password" id="new-password" placeholder="Enter new password">
+
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" placeholder="Confirm new password">
+
+                    <button type="button" onclick="updateSettings()">Update Settings</button>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <script src="scripts/admin_dashboard.js"></script>
+</body>
+</html>
