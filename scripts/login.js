@@ -46,6 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     function showMessage(message, type) {
+        const messageBox = document.getElementById("message-box");
         messageBox.innerText = message;
         messageBox.classList.remove("hidden");
         messageBox.className = type === "success" ? "message success" : "message error";
@@ -87,9 +88,9 @@ document.addEventListener("DOMContentLoaded", function () {
     // Handle Signup Form Submission
     signupForm.addEventListener("submit", async function (e) {
         e.preventDefault();
-        const name = signupForm.querySelector("input[type='text']").value;
-        const email = signupForm.querySelector("input[type='email']").value;
-        const password = signupForm.querySelector("input[type='password']").value;
+        const name = signupLink.querySelector("input[type='text']").value;
+        const email = signupLink.querySelector("input[type='email']").value;
+        const password = signupLink.querySelector("input[type='password']").value;
 
         try {
             const response = await fetch("https://counselease27-backend.onrender.com/api/auth/signup", {
@@ -99,14 +100,19 @@ document.addEventListener("DOMContentLoaded", function () {
             });
 
             const data = await response.json();
-            if (response.ok) {
-                showMessage("Account created successfully! You can now log in.", "success");
-                setTimeout(() => {
-                    document.getElementById("login-link").click(); // Switch to login form
-                }, 2000);
-            } else {
-                showMessage(data.message, "error");
+            if (!response.ok) {
+                throw new Error(data.message || "Signup failed");
             }
+    
+            showMessage("Account created successfully! You can now log in.", "success");
+    
+            // Clear input fields
+            this.reset();
+    
+            // Redirect to login form after 2 seconds
+            setTimeout(() => {
+                document.getElementById("login-link").click();
+            }, 2000);
         } catch (error) {
             showMessage("Signup failed. Please try again.", "error");
         }
